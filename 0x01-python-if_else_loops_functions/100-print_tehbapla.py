@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(ord('z'), ord('A') - 1, -1):
-    if i % 2 == 0:
-        diff = 0
-    else:
-        diff = 32
-    print('{}'.format(chr(i - diff)), end='')
+for i in range(122, 96, -1):
+    char = i
+    if i % 2 != 0:
+        char = char - 32
+    print("{:c}".format(char), end="")
