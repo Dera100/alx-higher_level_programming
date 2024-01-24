@@ -36,7 +36,7 @@ int is_palindrome(listint_t **head)
 		name[i] = new->n;
 		new = new->next;
 	}
-	for (a = 0; a < n/2; a++)
+	for (a = 0; a < n / 2; a++)
 	{
 		li = n - a - 1;
 		if (name[a] != name[li])
