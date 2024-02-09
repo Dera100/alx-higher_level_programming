@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """Define a class Square."""
 
 
@@ -11,6 +13,7 @@ class Square:
             size (int): The size of the new square.
         """
         self.size = size
+
 
     @property
     def size(self):
@@ -29,13 +32,9 @@ class Square:
         """Return the current area of the square."""
         return (self.__size * self.__size)
 
-
     def __eq__(self, other):
         """Define the == comparision to a Square."""
         return self.area() == other.area()
-
-
-
 
     def __ne__(self, other):
         """Define the != comparison to a Square."""
@@ -49,11 +48,9 @@ class Square:
         """Define the <= comparison to a Square."""
         return self.area() <= other.area()
 
-
     def __gt__(self, other):
         """Define the > comparison to a Square."""
         return self.area() > other.area()
-
 
     def __ge__(self, other):
         """Define the >= compmarison to a Square."""
